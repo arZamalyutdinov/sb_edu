@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e58965c1-26b2-495a-9cbf-be673f2b1388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../task1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SequenceGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/atm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/csh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/deviceGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/deviceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/MyCheckedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/MySerializableClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/mainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/simpleThing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/task3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Device.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -34,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task3" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,6 +79,11 @@
       <option name="presentableId" value="Default" />
       <updated>1568792177746</updated>
       <workItem from="1568792182366" duration="2447000" />
+      <workItem from="1568966064289" duration="4211000" />
+      <workItem from="1569331197256" duration="123000" />
+      <workItem from="1569331584318" duration="610000" />
+      <workItem from="1569338541271" duration="27000" />
+      <workItem from="1569403151753" duration="2012000" />
     </task>
     <servers />
   </component>
@@ -70,7 +95,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
