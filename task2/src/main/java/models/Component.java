@@ -1,3 +1,5 @@
+package models;
+
 abstract class Component {
     private Integer id;
     private String name;

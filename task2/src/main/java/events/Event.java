@@ -1,4 +1,7 @@
-abstract class Event {
+package events;
+
+
+public abstract class Event {
     private Integer deviceID;
     private Integer componentId;
 

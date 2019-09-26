@@ -1,4 +1,5 @@
-public class mainClass {
+public class Application {
+
     public static void main(String[] args) {
 
     }

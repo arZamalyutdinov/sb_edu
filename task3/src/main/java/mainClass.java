@@ -7,7 +7,7 @@ public class mainClass {
 
     private ArrayList<Integer> intList = new ArrayList<Integer>();
     private HashSet<String> stringSet = new HashSet<String>();
-
+// сериализация через файл -- добавить
     private static void subTask1() {
         MySerializableClass a = new MySerializableClass(new simpleThing("Hello, World!"));
         MySerializableClass b = a.deepClone();
@@ -24,7 +24,7 @@ public class mainClass {
     }
 
     private static void subTask3() throws NoSuchFieldException {
-
+// jackson -- для json
         Field integerListField = mainClass.class.getDeclaredField("intList");
         ParameterizedType integerListType = (ParameterizedType) integerListField.getGenericType();
         Class<?> integerListClass = (Class<?>) integerListType.getActualTypeArguments()[0];

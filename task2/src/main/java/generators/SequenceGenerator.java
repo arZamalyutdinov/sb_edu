@@ -1,3 +1,5 @@
+package generators;
+
 public class SequenceGenerator {
     private int val;
 

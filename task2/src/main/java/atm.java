@@ -1,3 +1,5 @@
+import models.Component;
+
 import java.util.HashSet;
 
 public class atm extends device {

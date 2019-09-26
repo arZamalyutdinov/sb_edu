@@ -2,28 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e58965c1-26b2-495a-9cbf-be673f2b1388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SequenceGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/atm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deviceGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deviceStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/MyCheckedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/MySerializableClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/mainClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/src/main/java/simpleThing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/task3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/ProcessService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Device.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SequenceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generators/SequenceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/atm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/atm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deviceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generators/deviceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task3/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task3/src/main/java/mainClass.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,9 +42,15 @@
   <component name="ProjectId" id="1R07Ul3Fvi0BMuer7bShu1cOUaZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../task3" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="events" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -84,6 +80,8 @@
       <workItem from="1569331584318" duration="610000" />
       <workItem from="1569338541271" duration="27000" />
       <workItem from="1569403151753" duration="2012000" />
+      <workItem from="1569417554311" duration="1556000" />
+      <workItem from="1569511624771" duration="103000" />
     </task>
     <servers />
   </component>

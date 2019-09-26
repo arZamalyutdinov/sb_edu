@@ -1,15 +1,17 @@
+package models;
+
 import java.util.HashSet;
 
-abstract class device {
+public class Device {
     private Integer id;
     private String name;
     private deviceStatus status;
     private HashSet<Component> components;
 
-    public device() {
+    public Device() {
     }
 
-    public device(Integer id, String name, deviceStatus status, HashSet<Component> components) {
+    public Device(Integer id, String name, deviceStatus status, HashSet<Component> components) {
         this.id = id;
         this.name = name;
         this.status = status;
