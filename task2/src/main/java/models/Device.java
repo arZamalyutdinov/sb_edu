@@ -1,5 +1,6 @@
 package models;
 
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+@NoArgsConstructor
 @Entity
 @Table(name = "devices")
 public class Device implements Serializable {
@@ -18,13 +20,10 @@ public class Device implements Serializable {
     @Column
     @Enumerated(EnumType.STRING)
     private DeviceStatus status;
-    @OneToMany(targetEntity = Component.class, mappedBy = "id.device", cascade = CascadeType.ALL)
+    @OneToMany(targetEntity = Component.class, mappedBy = "id.device", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Map<Integer, Component> components;
     private Integer curFail;
     private Integer compNum;
-
-    public Device() {
-    }
 
     public Map<Integer, Component> getComponents() {
         return components;

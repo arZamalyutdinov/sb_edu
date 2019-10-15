@@ -25,7 +25,7 @@ public class DeviceGenerator {
         Integer sequ = seq.getNext();
         for (int i = 1; i <= compNum; ++i ) {
             Component comp = generateComponent(i);
-            components.put(comp.getId(), comp);
+            components.put(comp.getId().getId(), comp);
         }
 
         return new Device(sequ, RandomStringUtils.randomAlphabetic(3), DeviceStatus.Normal, components);

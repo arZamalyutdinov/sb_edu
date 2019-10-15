@@ -30,13 +30,17 @@ public class ProcessService {
 //        session.save(comp);
 //        tx1.commit();
 //        session.close();
-        Map<Integer, Device> mp = deviceGenerator.generateDevices();
         DeviceDao db = new DeviceDao();
-
+        Map<Integer, Device> mp = db.findAllDevices();
         for (Map.Entry<Integer, Device> dv : mp.entrySet()) {
             Device d = dv.getValue();
-            db.save(d);
+            System.out.println(d);
         }
+
+//        for (Map.Entry<Integer, Device> dv : mp.entrySet()) {
+//            Device d = dv.getValue();
+//            db.save(d);
+//        }
         //
 //        HashMap<Integer, Device> devices = deviceGenerator.generateDevices();
 //        System.out.println(devices);

@@ -1,6 +1,7 @@
 package models;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -8,7 +9,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @NoArgsConstructor
-//@AllArgsConstructor
+@Data
 @ToString
 @Entity
 @Table(name = "components")
@@ -23,11 +24,13 @@ public class Component implements Serializable {
     @Column
     private Boolean status;
 
+    @AllArgsConstructor
     @Embeddable
-    public class pk implements Serializable {
+    public static class pk implements Serializable {
         @Column
         private Integer id;
 
+        public pk() {}
         @ManyToOne(fetch = FetchType.LAZY)
         @JoinColumn(name = "deviceid")
         private Device device;
@@ -54,21 +57,5 @@ public class Component implements Serializable {
         this.id.setId(id);
         this.name = name;
         this.status = status;
-    }
-
-    public void setStatus(Boolean status) {
-        this.status = status;
-    }
-
-    public Boolean getStatus() {
-        return status;
-    }
-
-    public Integer getId() {
-        return id.getId();
-    }
-
-    public String getName() {
-        return name;
     }
 }

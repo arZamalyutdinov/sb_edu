@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e58965c1-26b2-495a-9cbf-be673f2b1388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DeviceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/events/ErrorEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/events/EventFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/events/RestoreEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/generators/DeviceGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/generators/EventGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/ErrorStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/EventHandlingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/EventHandlingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/RestoreStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactoryUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task3/serialize.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Solvers/NonStreamSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Solvers/StreamSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/generators/NumberGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/helpers/Stopwatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task4/task4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="e58965c1-26b2-495a-9cbf-be673f2b1388" name="Default Changelist" comment="added hibernate(v1)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/atm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csh.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deviceStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/DeviceStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generators/SequenceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generators/SequenceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generators/deviceGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DeviceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DeviceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generators/DeviceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generators/DeviceGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Component.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Device.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/ProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ProcessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task3/src/main/java/MySerializableClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task3/src/main/java/MySerializableClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task3/target/classes/MySerializableClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task3/target/classes/MySerializableClass.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,8 +162,16 @@
       <workItem from="1570520340057" duration="2131000" />
       <workItem from="1570641583562" duration="98000" />
       <workItem from="1570641797083" duration="10160000" />
-      <workItem from="1571125013078" duration="10692000" />
+      <workItem from="1571125013078" duration="13928000" />
     </task>
+    <task id="LOCAL-00001" summary="added hibernate(v1)">
+      <created>1571151460847</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571151460847</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,5 +189,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added hibernate(v1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hibernate(v1)" />
   </component>
 </project>
