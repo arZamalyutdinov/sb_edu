@@ -1,20 +1,15 @@
 package events;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import models.Device;
 
+import java.util.HashMap;
+import java.util.HashSet;
+@Data
+@AllArgsConstructor
 public abstract class Event {
     private Integer deviceID;
     private Integer componentId;
 
-    public Event(Integer deviceID, Integer componentId) {
-        this.deviceID = deviceID;
-        this.componentId = componentId;
-    }
-
-    public Integer getComponentId() {
-        return componentId;
-    }
-
-    public Integer getDeviceID() {
-        return deviceID;
-    }
 }

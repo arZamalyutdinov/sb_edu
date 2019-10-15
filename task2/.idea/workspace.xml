@@ -2,18 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e58965c1-26b2-495a-9cbf-be673f2b1388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/ProcessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DeviceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/events/ErrorEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/events/EventFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/events/RestoreEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generators/DeviceGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generators/EventGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/ErrorStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/EventHandlingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/EventHandlingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/RestoreStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactoryUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/serialize.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Solvers/NonStreamSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Solvers/StreamSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/generators/NumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/helpers/Stopwatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/task4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SequenceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generators/SequenceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/atm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/atm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deviceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generators/deviceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task3/src/main/java/mainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task3/src/main/java/mainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/atm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deviceStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/DeviceStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generators/SequenceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generators/SequenceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generators/deviceGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ProcessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task3/src/main/java/MySerializableClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task3/src/main/java/MySerializableClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task3/target/classes/MySerializableClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task3/target/classes/MySerializableClass.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +53,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db2" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db2" type="feb32156:DbDataSourceImpl" />
+        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="hibernate-configuration-5.2" />
+        <option value="hibernate-main-5.2" />
         <option value="Class" />
       </list>
     </option>
@@ -42,14 +101,28 @@
   <component name="ProjectId" id="1R07Ul3Fvi0BMuer7bShu1cOUaZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="1b4196bf-9281-4a12-adbf-77162b26c5e9" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="events" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="models" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,6 +135,40 @@
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
       </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="task2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@39761695" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@39761695" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@91f6325" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -82,6 +189,18 @@
       <workItem from="1569403151753" duration="2012000" />
       <workItem from="1569417554311" duration="1556000" />
       <workItem from="1569511624771" duration="103000" />
+      <workItem from="1569576086545" duration="306000" />
+      <workItem from="1569576426008" duration="3515000" />
+      <workItem from="1569932574538" duration="13333000" />
+      <workItem from="1570003290094" duration="14000" />
+      <workItem from="1570003432101" duration="3000" />
+      <workItem from="1570021860870" duration="783000" />
+      <workItem from="1570023151047" duration="696000" />
+      <workItem from="1570181020922" duration="774000" />
+      <workItem from="1570520340057" duration="2131000" />
+      <workItem from="1570641583562" duration="98000" />
+      <workItem from="1570641797083" duration="10160000" />
+      <workItem from="1571125013078" duration="10692000" />
     </task>
     <servers />
   </component>

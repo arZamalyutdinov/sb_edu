@@ -4,7 +4,11 @@ public class SequenceGenerator {
     private int val;
 
     public SequenceGenerator() {
-        val = 1;
+        this.val = 1;
+    }
+
+    public SequenceGenerator(int start_val) {
+        val = start_val;
     }
 
     public int getNext() {

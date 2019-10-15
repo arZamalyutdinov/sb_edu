@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5733974b-1eb4-47e0-a905-f62e6bbacd7d" name="Default Changelist" comment="" />
+    <list default="true" id="5733974b-1eb4-47e0-a905-f62e6bbacd7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../task2/src/main/java/events/ErrorEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task2/src/main/java/events/RestoreEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task2/src/main/java/generators/DeviceGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task2/src/main/java/generators/EventGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task2/src/main/java/services/EventHandlingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/serialize.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Solvers/NonStreamSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/Solvers/StreamSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/src/main/java/generators/NumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task4/task4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/atm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/csh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/deviceStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/main/java/models/DeviceStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/events/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/main/java/events/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/generators/deviceGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/models/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/main/java/models/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/models/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/main/java/models/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task2/src/main/java/services/ProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task2/src/main/java/services/ProcessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task3/src/main/java/MySerializableClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task3/src/main/java/MySerializableClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task3/target/classes/MySerializableClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task3/target/classes/MySerializableClass.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +110,7 @@
       <workItem from="1568792510352" duration="41000" />
       <workItem from="1568792927334" duration="2158000" />
       <workItem from="1568966046136" duration="16000" />
+      <workItem from="1570004514162" duration="7000" />
     </task>
     <servers />
   </component>

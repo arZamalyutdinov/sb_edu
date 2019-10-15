@@ -10,13 +10,16 @@ public class MySerializableClass implements Serializable {
 
     public MySerializableClass deepClone() {
         try {
-            ByteArrayOutputStream out = new ByteArrayOutputStream();
-            ObjectOutputStream oos = new ObjectOutputStream(out);
+//            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("serialize.txt"));
             oos.writeObject(this);
+            oos.close();
 
-            ByteArrayInputStream in = new ByteArrayInputStream(out.toByteArray());
-            ObjectInputStream ois = new ObjectInputStream(in);
-            return (MySerializableClass) ois.readObject();
+//            ByteArrayInputStream in = new ByteArrayInputStream(out.toByteArray());
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream("serialize.txt"));
+            MySerializableClass that = (MySerializableClass) ois.readObject();
+            ois.close();
+            return that;
 
         } catch (IOException | ClassNotFoundException e) {
             return null;
