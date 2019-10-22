@@ -11,14 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 @NoArgsConstructor
-@Service
 public class Context {
-
-    @Autowired
-    private ErrorStrategy errorStrategy;
-
-    @Autowired
-    private RestoreStrategy restoreStrategy;
 
     private EventHandlingStrategy strategy;
     private Map<Integer, Device> devices;
@@ -30,9 +23,9 @@ public class Context {
 
     public void setStrategy(Event e) throws IllegalArgumentException {
         if (e instanceof ErrorEvent) {
-            this.strategy = errorStrategy;
+            this.strategy = new ErrorStrategy();
         } else if (e instanceof RestoreEvent) {
-            this.strategy = restoreStrategy;
+            this.strategy = new RestoreStrategy();
         } else {
             throw new IllegalArgumentException();
         }

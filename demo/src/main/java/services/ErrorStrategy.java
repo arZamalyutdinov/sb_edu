@@ -6,15 +6,18 @@ import lombok.AllArgsConstructor;
 import models.Device;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import utils.SpringContext;
 
 import java.util.Map;
 
-@Service
 @AllArgsConstructor
 public class ErrorStrategy implements EventHandlingStrategy {
 
-    @Autowired
     private DeviceDaoImpl db;
+
+    public ErrorStrategy() {
+        this.db = SpringContext.getBean(DeviceDaoImpl.class);
+    }
 
     @Override
     public void execute(Map<Integer, Device> devices, Integer deviceId, Integer compId) {
@@ -24,6 +27,8 @@ public class ErrorStrategy implements EventHandlingStrategy {
     }
 
     private void updateDevice(Device device) {
+
+        System.out.println("1");
         db.update(new DeviceDto(device));
     }
 }

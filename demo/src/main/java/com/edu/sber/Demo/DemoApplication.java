@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import services.*;
+import utils.SpringContext;
 
 @SpringBootApplication
 @ComponentScan(basePackageClasses = {
@@ -29,6 +30,8 @@ public class DemoApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
+		SpringContext context1 = new SpringContext();
+		context1.setApplicationContext(context);
 		ProcessService processService = context.getBean(ProcessService.class);
 		processService.process();
 	}

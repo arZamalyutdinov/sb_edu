@@ -13,15 +13,13 @@ import java.util.Map;
 import java.util.Queue;
 
 @Data
-@NoArgsConstructor
 @Service
+@NoArgsConstructor
 @Log
 @AllArgsConstructor
 public class EventHandlingService {
     private Queue<Event> events;
     private Map<Integer, Device> devices;
-
-    @Autowired
     private Context context;
 
     public void handleEvents() {

@@ -45,8 +45,19 @@ public class DeviceDaoImpl extends JdbcDaoSupport implements DeviceDao {
         } catch (NullPointerException ex) {
             logger.error(ex);
         }
+        String linkSql = "INSERT INTO devicecomponentlink(deviceid, componentname) " +
+                "VALUES (?, ?) ";
+
         for (Map.Entry<Integer, ComponentDto> componentEntry : device.getComponents().entrySet()) {
             ComponentDto component = componentEntry.getValue();
+            try {
+                getJdbcTemplate().update(linkSql,
+                        device.getId(),
+                        component.getName()
+                );
+            } catch (NullPointerException ex) {
+                logger.error(ex);
+            }
             componentDao.save(component);
         }
     }
@@ -57,11 +68,10 @@ public class DeviceDaoImpl extends JdbcDaoSupport implements DeviceDao {
                 "WHERE id = ?";
         try {
             getJdbcTemplate().update(sql,
-                    device.getId(),
-                    device.getName(),
                     device.getStatus().name(),
                     device.getCompNum(),
-                    device.getCurFail()
+                    device.getCurFail(),
+                    device.getId()
             );
         } catch (NullPointerException ex) {
             logger.error(ex);

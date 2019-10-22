@@ -101,6 +101,7 @@ public class ComponentDaoImpl extends JdbcDaoSupport implements ComponentDao {
             component.setStatus((Boolean)row.get("status"));
             componentList.add(component);
         }
+        System.out.println(componentList);
         return componentList.stream().collect(Collectors.toMap(ComponentDto::getId, x -> x));
     }
 }

@@ -6,16 +6,19 @@ import lombok.AllArgsConstructor;
 import models.Device;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import utils.SpringContext;
 
 import java.util.Map;
 
 
-@Service
 @AllArgsConstructor
 public class RestoreStrategy implements EventHandlingStrategy {
 
-    @Autowired
     private DeviceDaoImpl db;
+
+    public RestoreStrategy() {
+        this.db = SpringContext.getBean(DeviceDaoImpl.class);
+    }
 
     @Override
     public void execute(Map<Integer, Device> devices, Integer deviceId, Integer compId) {
