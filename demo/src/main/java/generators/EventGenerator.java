@@ -15,7 +15,7 @@ public class EventGenerator {
         Random r = new Random();
         Integer devId = r.nextInt(devices.size()) + 1;
         Device dev = devices.get(devId);
-        Integer compId = r.nextInt(dev.getcompNum()) + 1;
+        Integer compId = r.nextInt(dev.getCompNum()) + 1;
         EventFactory fact = new EventFactory();
         if (type == 2) {
             type = 1;

@@ -1,37 +1,37 @@
 package models;
 
+import dto.ComponentDto;
+import dto.DeviceDto;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+@Data
 @NoArgsConstructor
-@Entity
 @EqualsAndHashCode
-@Table(name = "devices")
 public class Device implements Serializable {
-    @Id
-    @Column
     private Integer id;
-    @Column
     private String name;
-    @Column
-    @Enumerated(EnumType.STRING)
     private DeviceStatus status;
-    @OneToMany(targetEntity = Component.class, mappedBy = "id.device", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Map<Integer, Component> components;
     private Integer curFail;
     private Integer compNum;
 
-    public Map<Integer, Component> getComponents() {
-        return components;
-    }
-
-    public Integer getcompNum() {
-        return compNum;
+    public Device(DeviceDto dto) {
+        this.id = dto.getId();
+        this.name = dto.getName();
+        this.status = dto.getStatus();
+        this.curFail = dto.getCurFail();
+        this.compNum = dto.getCompNum();
+        HashMap<Integer, Component> mp = new HashMap<>();
+        for (Map.Entry<Integer, ComponentDto> entry : dto.getComponents().entrySet()) {
+            Component component = new Component(entry.getValue());
+            mp.put(component.getId(), component);
+        }
+        this.components = mp;
     }
 
     public Device(Integer id, String name, DeviceStatus status, HashMap<Integer, Component> components) {
@@ -39,13 +39,8 @@ public class Device implements Serializable {
         this.name = name;
         this.status = status;
         this.components = components;
-        for (Map.Entry<Integer, Component> entry : components.entrySet()) {
-            Component c = entry.getValue();
-            c.setDevice(this);
-        }
         this.curFail = 0;
         this.compNum = components.size();
-
     }
 
     public void changeComponentStatus(Integer compId, boolean status) throws RuntimeException {
@@ -71,40 +66,5 @@ public class Device implements Serializable {
             throw new RuntimeException("Same status!");
         }
         comp.setStatus(status);
-    }
-
-    public DeviceStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(DeviceStatus status) {
-        this.status = status;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {
-        return "Device{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", status=" + status +
-                ", components=" + components +
-                ", curFail=" + curFail +
-                '}' + '\n';
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getId() {
-        return id;
     }
 }

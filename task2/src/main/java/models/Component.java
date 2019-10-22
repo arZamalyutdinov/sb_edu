@@ -1,20 +1,16 @@
 package models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 
 @NoArgsConstructor
 @Data
-@ToString
 @Entity
 @Table(name = "components")
 public class Component implements Serializable {
-//    @Id
     @EmbeddedId
     private pk id;
 
@@ -30,8 +26,10 @@ public class Component implements Serializable {
         @Column
         private Integer id;
 
-        public pk() {}
-        @ManyToOne(fetch = FetchType.LAZY)
+        public pk() {
+        }
+
+        @ManyToOne(fetch = FetchType.EAGER)
         @JoinColumn(name = "deviceid")
         private Device device;
 
@@ -45,6 +43,19 @@ public class Component implements Serializable {
 
         public void setDevice(Device device) {
             this.device = device;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            pk pk = (pk) o;
+            return getId().equals(pk.getId());
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(getId());
         }
     }
 

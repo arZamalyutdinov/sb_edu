@@ -6,7 +6,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import utils.HibernateSessionFactoryUtil;
-
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -21,17 +20,20 @@ public class DeviceDao {
         session.save(device);
         tx.commit();
         session.close();
-        sessionFactory.close();
     }
 
     public void update(Device device) {
+
         SessionFactory sessionFactory = HibernateSessionFactoryUtil.getSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
-        session.update(device);
+        try {
+            session.update(device);
+        } catch (Throwable ex) {
+            System.out.println(ex.toString());
+        }
         tx.commit();
         session.close();
-        sessionFactory.close();
     }
 
     public void delete(Device device) {
@@ -41,7 +43,6 @@ public class DeviceDao {
         session.delete(device);
         tx.commit();
         session.close();
-        sessionFactory.close();
     }
 
     public Device findDevice(Integer id) {
@@ -49,18 +50,17 @@ public class DeviceDao {
         Session session = sessionFactory.openSession();
         Device device = session.get(Device.class, id);
         session.close();
-        sessionFactory.close();
         return device;
     }
 
     public Map<Integer, Device> findAllDevices() {
         SessionFactory sessionFactory = HibernateSessionFactoryUtil.getSessionFactory();
-        List<Device> lst = (List<Device>) sessionFactory
-                .openSession()
+        Session session = sessionFactory.openSession();
+        List<Device> lst = (List<Device>) session
                 .createSQLQuery("Select * from devices")
                 .addEntity(Device.class)
                 .list();
-        sessionFactory.close();
+        session.close();
         return lst.stream().collect(Collectors.toMap(Device::getId, x -> x));
     }
 }
