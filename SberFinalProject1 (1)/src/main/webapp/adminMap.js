@@ -2,6 +2,7 @@
 address = 'http://192.168.43.95:';
 port = '8080';
 path='/back';
+let curCopterId = undefined;
 var home = {
     lat : 55.741146,
     lon : 37.531220
@@ -111,6 +112,7 @@ function clickOnPlaceMark(e) {
     console.log(selectedCopter.id);
     // showTelemetry(selectedCopterId);
     var curId = placeMark.properties._data.hintContent;
+    curCopterId = curId;
     updateCopterInfo(curId);
     console.log('afterUpdate');
 }
@@ -118,6 +120,14 @@ function clickOnPlaceMark(e) {
 // update copter location on the map or add it to the map
 function update(copter){
   var location = copter.telemetry.location;
+    test = copter;
+    if (test.id === curCopterId) {
+        $('#lat').html(test.telemetry.location.lat);
+        $('#battery').html(test.telemetry.battery);
+        $('#vel').html(test.telemetry.speed);
+        $('#lon').html(test.telemetry.location.lon);
+        $('#coptId').html(test.id);
+    }
   if(coptersMap.has(copter.id)) {
      // console.log("has copter: " + copter.id);
       var copterObj = coptersMap.get(copter.id);
